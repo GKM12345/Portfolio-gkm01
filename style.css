@@ -1,0 +1,781 @@
+/*Nav Menu Bar*/
+
+.body{
+	position: relative;
+}
+
+.nav-menu-bar{
+	width: 100%;
+	height: auto;
+	padding: 2px 0px 2px 0px;
+	background-color: #1b70d1;
+	position: sticky;
+	top: 0%;
+	z-index: 3;
+}
+
+#menu-btn{
+	margin: 10px 10px 0px 0px;
+	padding: 2px 0px 2px 0px;
+	float: right;
+}
+
+#menu-btn a{
+	color: white;
+	font-size: 0rem;
+}
+
+/*.nav-menu{
+	position: fixed;
+}*/
+
+/*body-header*/
+
+#body-header{
+	height: 65vh;
+	opacity: 0.8;
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 1.2rem;
+
+}
+
+/*horizontal-list*/
+
+.text-center{
+	text-align: center;
+}
+
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+}
+
+.horizontal-list li {
+	display: inline-block;
+	margin: 0rem 0.8rem 0rem 0.8rem;
+}
+
+.horizontal-list li a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	font-size: 1.1rem;
+	
+}
+
+.nav-menu li a{
+	transition: color 0.5s, border-bottom 5s;
+}
+
+.nav-menu li a:hover {
+	color: lightgrey;
+	border-bottom: 1px solid white;
+	
+}
+
+/*header-name*/
+
+#header-name{
+	margin-top: 15vh;
+	margin-bottom: 0.5rem;
+}
+
+#my-name{
+	color: white;
+	font-size: 3.8rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	font-family: sans-serif;
+}
+
+/*Social-Icons*/
+
+
+.social-icons li a i{
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 50%;
+}
+
+
+
+.social-icons li a i:hover {
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 255, 0.4);
+}
+
+/*ABOUT*/
+
+#about{
+	height: auto;
+	width: 100%;
+}
+
+#my-image {
+	height: 12.5rem;
+	width: 12.5rem;
+	margin: auto;
+	margin-top: -13vh;
+	position: relative;
+}
+
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px 4px white;
+
+}
+
+#about-desc{
+	width: 75%;
+	margin: auto;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#about-desc p{
+	font-family: sans-serif;
+	text-align: justify;
+	font-size: 1.2rem;
+	line-height: 1.3;
+	word-spacing: 1px;
+	color: grey;
+}
+
+/*SECTION*/
+
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(2n){
+	background-color: white;
+}
+
+section:nth-child(2n+1){
+	background-color: #d4d3d34f;
+}
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+
+.section-heading span{
+	font-size: 35px;
+	font-family: sans-serif;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+
+}
+
+.MB-60px{
+	margin-bottom: 60px;
+}
+
+/*SKILLS*/
+
+.display-skills{
+
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 2.5rem;
+}
+
+.skill-progress{
+
+	width: 12rem;
+	height: 2.5rem;
+	border: 0px solid lightgrey;
+	border-radius: 1.2rem;
+	background-color: lightgrey;
+	margin: 2.5rem 1rem;
+
+}
+
+.skill-percent{
+
+	height: inherit;
+	border-radius: 1.2rem 0px 0px 1.2rem;
+}
+
+.skill-name{
+	color: white;
+	padding: 10px 15px;
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 1.2rem;
+}
+
+/*COMMON CLASS*/
+
+.eighty-five-percent{
+	width: 85%;
+}
+
+.eighty-percent{
+	width: 80%;
+}
+
+.seventy-percent{
+	width: 70%;
+}
+
+.sixty-percent{
+	width: 60%;
+}
+
+.ninty-percent{
+	width: 90%;
+}
+
+.color-blue{
+	background-color: #2857a4;
+}
+
+.color-orange{
+	background-color: #ed582a;
+}
+
+.color-marron{
+	background-color: #6e3a75d1;
+}
+
+.color-green{
+	background-color: #0d7665;
+}
+
+.fontcolor-green{
+	color: #166e1a;
+}
+
+.cl-blue{
+	color: blue;
+}
+
+/*section:target {
+	background-color: #12cac07a;
+}*/
+
+/*Background color changes after target and again comes to its original color try to implement ones learn animation*/
+
+
+/*EXPERIENCE*/
+
+.timeline{
+
+	position: relative;
+	width: 75%;
+	height: auto;
+	margin-bottom: 2rem;
+	/*border: 2px solid black;*/
+	
+}
+
+.timeline-box{
+	width: 42%;
+	height: 43%;
+	min-height: 200px;
+	margin: 1rem 0rem 1rem 0rem;
+	/*border: 2px solid black;*/
+}
+
+.timeline-box:nth-child(2n){
+	position: relative;
+	left: 53%;
+}
+
+.timeline-box:nth-child(2n+1){
+	position: relative;
+	left: 2.5%;
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	border-radius: 50%;
+	width: 0.9rem;
+	height: 0.9rem;
+	background-color: #bbb6b6;
+	display: inline-block;
+	position: absolute;
+	top: 22%;
+	left: -11%;
+	z-index: 1;
+
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	border-radius: 50%;
+	width: 0.9rem;
+	height: 0.9rem;
+	background-color: #bbb6b6;
+	display: inline-block;
+	position: absolute;
+	top: 23%;
+	left: 109.3%;
+	z-index: 1;
+
+}
+
+.timeline-divider{
+	border: 0.1rem dashed #0096fa6b;
+	height: 74%;
+	width: 0;
+	position: absolute;
+	top: 7%;
+	left: 49%;
+}
+
+.timeline-divider:nth-child(2n+1){
+	height: 64%;
+}
+
+
+
+#portfolio:target{
+	transition: all 5s;
+}
+
+
+
+.timeline-traveller{
+
+	position: sticky;
+	top: 20%;
+	font-size: 1.3rem;
+	color: #2857a4;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+.timeline-box-content{
+	text-align: right;
+}
+
+.timeline-box-content p{
+	text-align: justify;
+	color: lightslategrey;
+}
+
+.timeline-box-content::before{
+
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	width: 2.7rem;
+	height: 2.7rem;
+	background-image: url(image/codingninjalogo.png);
+	background-size: contain;
+
+}
+
+.timeline-box-content1::before{
+
+	width: 3.5rem;
+	height: 3.5rem;
+	background-image: url(image/BIET_Jhansi_Logo.jpg);
+	background-size: cover;
+	border-radius: 15px;
+
+}
+
+.timeline-box-content2::before{
+
+	width: 3.3rem;
+	height: 3.3rem;
+	background-image: url(image/chslogo.gif);
+	background-repeat: no-repeat;
+
+}
+
+.timeline-box-content3::before{
+
+	width: 5rem;
+	height: 5rem;
+	background-image: url(image/codelogo.jpg);
+}
+
+.timeline-box-heading1{
+	width: 65%;
+	float: right;
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+	font-weight: bold;
+	color: #2857a4;
+}
+
+.timeline-box-heading2{
+	width: 65%;
+	float: right;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+	color: #ed582a;
+
+}
+
+.timeline-box-heading3{
+	width: 70%;
+	float: right;
+	font-family: sans-serif;
+	color: lightslategrey;
+}
+
+
+
+
+
+
+/*PORTFOLIO*/
+
+.projects{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project-detail{
+
+	width: 22rem;
+	height: 16rem;
+	position: relative;
+	margin: 1rem;
+}
+
+.project-detail:hover {
+	width: 22rem;
+	height: 16rem;
+	background-color:#999999e6 ;
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 6px 2px #64c3ed;
+}
+
+.project-detail:hover .project-image img{
+	opacity: 0.3;
+}
+
+.project-detail:hover .project-desc p{
+	opacity: 1;
+}
+
+
+
+.project-detail img{
+
+	width: 20rem;
+	height: 15rem;
+}
+
+.project-desc{
+
+	position: absolute;
+	left: 0%;
+
+}
+
+.project-desc p{
+	font-size: 2.2rem;
+	opacity: 0;
+	text-align: center;
+	font-family: sans-serif;
+	color: white;
+}
+
+
+/*CONTACT*/
+
+#Contact{
+
+	background-image: linear-gradient(50deg, #2c5099,#403066 70%);
+}
+
+.contact-heading span{
+	color: white;
+}
+
+.contact-detail{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 1.5rem;
+}
+
+.contact-bio,.contact-bio1{
+	width: 26rem;
+}
+
+.contact-bio input[type="text"], input[type="email"], textarea{
+
+	background-color:inherit ;
+	 border-style: none;
+	 outline: none;
+	 border-bottom: solid 2.2px #d1cbcb;
+	 padding: 5px;
+	 font-size: 1.6rem;
+	 color: #d1cbcb;
+	margin: 1rem;
+}
+
+.contact-bio button{
+	width: auto;
+	height: 2.8rem;
+	color: #d1cbcb;
+	background-color: inherit;
+	border: 2px solid #d1cbcb;
+	border-radius: 6px;
+	padding: 5px;
+	font-size: 1rem;
+	font-weight: 700;
+	margin:1rem 6.7rem ;
+}
+
+.contact-bio ::placeholder{
+	font-size: 1rem;
+}
+
+
+.contact-bio p{
+	font-size: 1rem;
+	font-family: sans-serif;
+	color: grey;
+	margin: 1rem 0rem -0.3rem 1.5rem;
+}
+
+.contact-bio1 h3{
+	font-size: 1.5rem;
+	font-family: sans-serif;
+	margin-bottom: 0.7rem;
+	color: #d1cbcb;
+}
+
+.contact-bio1 span,p{
+	display: inline-block;
+	color: #d1cbcb;
+	font-size: 1rem;
+	font-family: sans-serif;
+	line-height: 1.3;
+}
+
+.contact-bio1 p{
+	margin-top: -0.1rem;
+}
+
+.contact-bio1 span{
+	margin: 0rem 0.5rem 0.5rem 0rem;
+}
+
+
+
+/*Work Experience and Education Responsive*/
+
+
+@media screen and (max-width: 1040px){
+
+	.timeline-divider{
+		left: 5%;
+	}
+
+	.timeline-box{
+		width: 80%;
+	}
+
+
+	.timeline-box{
+		left: 12% !important;
+	}
+
+	.timeline-box:nth-child(2n)::after{
+
+		left: -10%;
+	}
+
+	.timeline-box:nth-child(2n+1)::after{
+
+		left: -10%;
+	}
+
+}
+
+@media screen and (max-width: 740px){
+
+	#nav-menu:target {
+
+		width: 29.5%;
+		height: 60vh;
+		background-color: #1b70d1;
+
+	}
+
+	#nav-menu:target li{
+		
+		display: block;
+		margin: 2rem 0rem 2rem 0rem;
+	}
+
+	#nav-menu:target li a{
+		font-size: 1.1rem;
+	}
+
+	#nav-menu{
+		
+		width: 29.5%;
+		height: 0;
+		position: absolute;
+		right: 0%;
+		top: 0%;
+		transition: all 1s ;
+	}
+	#nav-menu li{
+		display: none;
+	}
+
+	#nav-menu li a{
+		font-size: 0rem;
+	}
+
+
+	.nav-menu-bar{
+		width: 100%;
+		height: 52.4px;
+		padding: 2px 0px 2px 0px;
+		background-color: #1b70d1;
+		position: sticky;
+		top: 0%;
+		z-index: 3;
+	}
+
+	#menu-btn a{
+		font-size: 1.5rem;
+	}
+
+	#header-name{
+		margin-top: 14vh;
+	}
+
+	#my-name{
+		font-size: 3rem;
+	}
+
+	.social-icons li a i{
+		font-size: 0.8rem;
+	}
+
+	#my-image {
+		height: 11rem;
+		width: 11rem;
+
+    }
+} 
+
+
+@media screen and (max-width: 580px){
+	#header-name{
+		margin-top: 10vh;
+	}
+
+	#about-desc p{
+		font-size: 1rem;
+	
+	}
+
+	.contact-bio input[type="text"], input[type="email"], textarea{
+		font-size: 1.2rem;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+
+	.timeline-box:nth-child(2n)::after{
+
+		left: -11.1%;
+	}
+
+	.timeline-box:nth-child(2n+1)::after{
+
+		left: -11.1%;
+	}
+
+
+}
+
+@media screen and (max-width: 420px){
+
+	#my-image {
+		margin-top: -10.5vh;
+
+    }
+
+    #my-name{
+		font-size: 2.9rem;
+	}
+
+}
+
+@media screen and (max-width: 300px){
+
+	#my-name{
+		font-size: 2.8rem;
+	}
+
+	.social-icons li a i{
+		font-size: 0.5rem;
+	}
+
+	.social-icons li{
+		margin: 2px;
+	}
+
+
+	#my-image {
+		height: 8rem;
+		width: 8rem;
+
+    }
+
+}
+
+@media screen and (min-height: 1080px){
+	
+	#my-image {
+		margin-top: -9.5vh;
+
+    }
+}
+
+@media screen and (min-height: 1360px){
+	
+	#my-image {
+		margin-top: -6.5vh;
+    }
+
+    #my-name{
+    	font-size: 4.5rem;
+    }
+
+    #header-name{
+    	margin-bottom: 5rem;
+    }
+
+    .social-icons li a i{
+		font-size: 1.5rem;
+	}
+}
